@@ -6,16 +6,17 @@ public class CommitCafe {
 
     private static int cups = 0;
 
-    public static void brew(String drink) {        // STUDENT_TODO_2A: Implement - add 1 to cups & print a message
+    public static void brew(String drink) {
+        // STUDENT_TODO_2A: Implement - add 1 to cups & print a message
         cups++;
-        System.out.print("cups is now "+ cups);
+        System.out.println(barista + " brewed " + drink + ". Espresso yourself, then push to main.");
+        
         // STUDENT_TODO_2B: Add a second brew-related improvement
-        System.out.println("THIS IS A HUGE IMPROVEMENT");
-
+        System.out.println("[BREW CHECK] drink length = " + drink.length());
     }
 
     public static void printSummary() {
-        System.out.println("[SUMMARY] " + barista + " brewed " + cups + " cups today.");
+        System.out.println("[SUMMARY] " + barista + " (" + title + ") brewed " + cups + " cups today.");
     }
 
     public static void main(String[] args) {
